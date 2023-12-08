@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url(./assets/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 28.5rem;
+  background-color: #0c122c;
+}
+
+@media (min-width: 375px) and (max-width: 840px) {
+  body {
+    background-image: url(./assets/images/bg-mobile.png);
+    background-size: cover;
+    /* background-position: 100% 0%; */
+    background-repeat: repeat;
+  }
+}
